@@ -1,0 +1,5 @@
+code	Variable	pref_group
+MYSQL	1	Database
+SQLDSN	dbi:mysql:database=vagrant;host=localhost	Database
+SQLUSER	vagrant	Database
+SQLPASS	vagrant	Database

@@ -1,0 +1,5 @@
+code	Variable	pref_group
+PGSQL	1	Database
+SQLDSN	dbi:Pg:dbname=vagrant	Database
+SQLUSER	vagrant	Database
+SQLPASS		Database

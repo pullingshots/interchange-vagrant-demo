@@ -1,0 +1,16 @@
+Run your own local Interchange demo using Vagrant and Plack
+
+1. Clone this repository
+
+2. vagrant up
+
+3. vagrant ssh -c "plackup /vagrant/app.psgi"
+
+4. vagrant ssh -c "tail -f /vagrant/catalogs/*/logs/* /home/vagrant/interchange/*.log"
+
+5. Go to one of
+  - http://localhost:5000/mysql
+  - http://localhost:5000/pgsql
+  - http://localhost:5000/sqlite
+
+6. Happy Interchange hacking!
