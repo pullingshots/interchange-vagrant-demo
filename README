@@ -3,10 +3,14 @@ Run your own local Interchange demo using Vagrant and Plack
 1. Clone this repository
 
 2. vagrant up
+  - takes a bit of time but doesn't require any interaction
 
 3. vagrant ssh -c "plackup /vagrant/app.psgi"
+  - restarts the interchange server and sets up a psgi app for all 3 catalogs on port 5000
+  - access log is output to console
 
 4. vagrant ssh -c "tail -f /vagrant/catalogs/*/logs/* /home/vagrant/interchange/*.log"
+  - watches all of the relevant Interchange log files
 
 5. Go to one of
   - http://localhost:5000/mysql
